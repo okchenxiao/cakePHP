@@ -1,0 +1,50 @@
+.dataTable {  
+  clear: both;
+  margin-top: 5px;
+}
+
+.dataTables_filter label {
+  line-height: 32px !important;
+}
+
+.dataTable .row-details {  
+  margin-top: 3px;
+  display: inline-block;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+}
+
+.dataTable .row-details.row-details-close {
+  background: url("../image/datatable-row-openclose.png") no-repeat 0 0;
+}
+
+.dataTable .row-details.row-details-open {  
+  background: url("../image/datatable-row-openclose.png") no-repeat 0 -23px !important;
+}
+
+.dataTable .details {
+  background-color: #eee !important;
+}
+
+.dataTable .details td,
+.dataTable .details th {
+  padding: 4px;
+  background-color: none !important;
+  border: 0;
+}
+
+.dataTable .details tr:hover td,
+.dataTable .details tr:hover th {
+  background-color: none !important;
+}
+
+.dataTable .details tr:nth-child(odd) td,
+.dataTable .details tr:nth-child(odd) th {
+  background-color: #eee !important;
+}
+
+.dataTable .details tr:nth-child(even) td,
+.dataTable .details tr:nth-child(even) th {
+  background-color: #eee !important;
+}
