@@ -121,7 +121,7 @@ var App = function () {
                     clearTimeout(resize);
                 }   
                 resize = setTimeout(function() {
-                    console.log('resize');
+                    //console.log('resize');
                     handleResponsive();    
                 }, 50); // wait 50ms until window resize finishes.
             });
@@ -955,7 +955,7 @@ $(function(){
 
         $("li.menu"+menuname+">ul.sub-menu>li:eq("+cname+")>ul.sub-menu>li:eq("+dname+")>a").addClass("xzcd");
     }
-    console.log(menuname+">"+cname+">"+dname);
+    //console.log(menuname+">"+cname+">"+dname);
 
 
 
