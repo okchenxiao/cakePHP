@@ -71,30 +71,10 @@ class DATABASE_CONFIG {
 	 	'persistent' => false,
 	 	'host' => '127.0.0.1',
 	 	'login' => 'root',
-	 	'password' => 'root',
+	 	'password' => 'chenxiao123',
 	 	'database' => 'data_import',
 	 	'prefix' => 'yz_',
 	 	'encoding' => 'utf8',
 	 );
 
-//	public $default = array(//²âÊÔ·þ
-//		'datasource' => 'Database/Mysql',
-//		'persistent' => false,
-//		'host' => '127.0.0.1',
-//		'login' => 'root',
-//		'password' => 'sstwp_mysql',
-//		'database' => 'data_import',
-//		'prefix' => 'yz_',
-//		'encoding' => 'utf8',
-//	);
-	// public $pengxiang = array(
-	// 	'datasource' => 'Database/Mysql',
-	// 	'persistent' => false,
-	// 	'host' => 'localhost',
-	// 	'login' => 'root',
-	// 	'password' => '',
-	// 	'database' => 'yznewtms',
-	// 	'prefix' => 'yz_',
-	// 	'encoding' => 'utf8',
-	// );
 }

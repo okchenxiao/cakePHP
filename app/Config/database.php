@@ -71,7 +71,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => 'root',
+		'password' => 'chenxiao123',
 		'database' => 'ck',
 		'prefix' => 'yz_',
 		'encoding' => 'utf8',
