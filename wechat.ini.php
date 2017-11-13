@@ -1,8 +1,8 @@
 <?PHP die('这是配置文件,禁止访问!');
 /*
 [wechat]
-  appid = wxb0d0641c430193be
-  secret = de59497c7b501cfc13a1d1aff51c95cc
+  appid = wx66cfe2575361c67c
+  secret = 1e92c58c981db51c7682cdd8b5bd6f33
   token = ikugui
 [url]
   app_url = http://ck.ikugui.cc
