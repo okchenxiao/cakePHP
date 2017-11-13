@@ -20,10 +20,10 @@ class AppController extends Controller
             if (!CakeSession::check('user_info')) {
                 $auth = new Auth($this->Wechat->config['wechat']['appid'], $this->Wechat->config['wechat']['secret']);
                 $user_wx=$auth->authorize($to = null, $scope = 'snsapi_userinfo', $state = 'STATE');
-                $userService = new User($this->Wechat->config['wechat']['appid'], $this->Wechat->config['wechat']['secret']);
-                $user_msg=$userService->get($user_wx->openid);//根据openid获得用户信息
-                $user_info=$this->object_to_array($user_msg);//对象转换为数组
-                CakeSession::write('user_info', $user_info);
+//                $userService = new User($this->Wechat->config['wechat']['appid'], $this->Wechat->config['wechat']['secret']);
+//                $user_msg=$userService->get($user_wx->openid);//根据openid获得用户信息
+//                $user_info=$this->object_to_array($user_msg);//对象转换为数组
+                CakeSession::write('user_info', 1);
             } else {
 
             }
