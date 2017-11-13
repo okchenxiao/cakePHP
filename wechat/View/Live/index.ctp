@@ -31,6 +31,7 @@ body {
 	overflow: hidden;
 	font-family: 'Comfortaa', cursive;
 	font-size: 11px;
+    background: black;
 }
 canvas {
 	background-image:url(p9mUO.jpg);

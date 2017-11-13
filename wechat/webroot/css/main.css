@@ -14,7 +14,7 @@ body{
     background-color: #9a6600;
     background-repeat: repeat-x;
     background-position: top;   
-	background-image: url(../sprites/bg_tile.jpg); 
+	background-image: url(/sprites/bg_tile.jpg);
 	font-family: 'Chewy', cursive;
 }
 
