@@ -6,9 +6,6 @@ use Overtrue\Wechat\Menu;
 use Overtrue\Wechat\MenuItem;
 class IndexController extends AppController
 {
-
-//    public $uses=array('ReplyKeyword','Fans','TrySee');//低版本php环境使用手动new对象查询数据库
-
     //连接微信服务
     public function wx_service()
     {
@@ -16,39 +13,20 @@ class IndexController extends AppController
         $server = new Server($this->Wechat->config['wechat']['appid'],$this->Wechat->config['wechat']['token']);
         //关注事件
         $server->on('event', 'subscribe', function ($event) {
-//            $Fans_model = new Fans();
-//            $ReplyKeyword_model = new ReplyKeyword();
-
-//            $isset=$Fans_model->findByWechatOpenId($event->FromUserName);
-
-            return Message::make('text')->content('欢迎关注！');
+            return Message::make('text')->content('此时此刻的你就是最好的你！');
         });
 
         //关键字回复,没有该关键字的则自动回复消息
         $server->on('message','text',function ($message) {
-            return Message::make('text')->content('慎独慎行！！');
+            return Message::make('text')->content('你那么美说什么都是对的~~~');
         });
-        //扫描二维码
-        $server->on('event', 'SCAN', function ($event) {
-            if($event->EventKey=='focus'){
-                return Message::make('text')->content('慎独慎行！！！');
-            }else{
-                $url=$this->Wechat->config['wx_url'].'/TrySees/follow';
-                return Message::make('text')->content("点击下面链接预览\r\n$url");
-            }
-        });
+
         //菜单click点击事件
         $server->on('event', 'click', function ($click) {
             $keyword=$click->EventKey;
-            $about_text = "
-联系我：<a href='tel:13980969653'>13980969653</a>
-
-内容全部为原创作品，未经允许禁止转载和商业用途，侵权必究!";
-
             switch($keyword){
-
                 case 'about':
-                    return Message::make('text')->content($about_text);
+                    return Message::make('text')->content('我我我我我我我....');
                     break;
                 default :
                     return Message::make('text')->content('啊.哈~迷路啦.');

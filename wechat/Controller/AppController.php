@@ -29,9 +29,9 @@ class AppController extends Controller
             }
         }
 
-        $js = new Js($this->Wechat->config['wechat']['appid'], $this->Wechat->config['wechat']['secret']);
-        $js_local = $js->config(array('getLocation'));//jssdk配置
-        $this->set('js_local', $js_local);
+//        $js = new Js($this->Wechat->config['wechat']['appid'], $this->Wechat->config['wechat']['secret']);
+//        $js_local = $js->config(array('getLocation'));//jssdk配置
+//        $this->set('js_local', $js_local);
     }
 
     /**
