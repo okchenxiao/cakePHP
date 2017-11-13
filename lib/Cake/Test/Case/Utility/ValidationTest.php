@@ -1888,7 +1888,7 @@ class ValidationTest extends CakeTestCase {
 		$this->assertFalse(Validation::url('--.example.com'));
 		$this->assertFalse(Validation::url('www.cakephp.org', true));
 
-		$this->assertTrue(Validation::url('http://example.com/~userdir/subdir/index.html'));
+		$this->assertTrue(Validation::url('http://example.com/~userdir/subdir/index.ctp'));
 		$this->assertTrue(Validation::url('http://www.zwischenraume.de'));
 		$this->assertTrue(Validation::url('http://www.zwischenraume.cz'));
 		$this->assertTrue(Validation::url('http://www.last.fm/music/浜崎あゆみ'), 'utf8 path failed');

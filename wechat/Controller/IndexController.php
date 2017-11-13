@@ -45,15 +45,11 @@ class IndexController extends AppController
     public function wx_menus()
     {
         $menuService = new Menu($this->Wechat->config['wechat']['appid'],$this->Wechat->config['wechat']['secret']);
-        $button = new MenuItem("我");
 
         $menus = array(
-            new MenuItem("菜单一个", 'view',$this->Wechat->config['url']['wx_url'].'/Index/index'),
-            new MenuItem("菜菜单单", 'view', $this->Wechat->config['url']['wx_url'].'/Index/index'),
-            $button->buttons(array(
-                new MenuItem('我的主页', 'view', $this->Wechat->config['url']['wx_url'].'/Index/index'),
-                new MenuItem('关于我们', 'click', 'about'),
-            )),
+            new MenuItem("逗比测试", 'view',$this->Wechat->config['url']['wx_url'].'/Index/index'),
+            new MenuItem("龙珠小游戏", 'view', $this->Wechat->config['url']['wx_url'].'/Index/index'),
+            new MenuItem("生存挑战", 'view', $this->Wechat->config['url']['wx_url'].'/Index/index'),
         );
         try {
             $menuService->set($menus);// 请求微信服务器
