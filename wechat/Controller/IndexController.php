@@ -47,9 +47,9 @@ class IndexController extends AppController
         $menuService = new Menu($this->Wechat->config['wechat']['appid'],$this->Wechat->config['wechat']['secret']);
 
         $menus = array(
-            new MenuItem("逗比测试", 'view',$this->Wechat->config['url']['wx_url'].'/Index/index'),
-            new MenuItem("龙珠小游戏", 'view', $this->Wechat->config['url']['wx_url'].'/Index/index'),
-            new MenuItem("生存挑战", 'view', $this->Wechat->config['url']['wx_url'].'/Index/index'),
+            new MenuItem("逗比测试", 'view',$this->Wechat->config['url']['wx_url'].'/Dou/index'),
+            new MenuItem("龙珠小游戏", 'view', $this->Wechat->config['url']['wx_url'].'/LongZhu/index'),
+            new MenuItem("生存挑战", 'view', $this->Wechat->config['url']['wx_url'].'/Live/index'),
         );
         try {
             $menuService->set($menus);// 请求微信服务器
